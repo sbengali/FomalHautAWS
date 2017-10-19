@@ -3,8 +3,7 @@ import json
 import glob
 
 if __name__ == "__main__":
-    for fileName in glob.glob("*.jpg"):
-    #fileName = 'pic-1.jpg'
+    for fileName in glob.glob(r'Data\*.jpg'):
         bucket='facial-recognition-pune'
         client=boto3.client('rekognition')
 
